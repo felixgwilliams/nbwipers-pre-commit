@@ -1,0 +1,9 @@
+- id: nbwipers-check-install
+  name: nbwipers check install
+  description: Check nbwipers is installed
+  entry: nbwipers
+  args: [check-install]
+  language: python
+  stages: [commit, merge-commit, push, manual]
+  always_run: true
+  pass_filenames: false
