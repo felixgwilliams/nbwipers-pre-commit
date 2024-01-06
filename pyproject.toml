@@ -1,4 +1,4 @@
 [project]
 name = "nbwipers-pre-commit"
 version = "0.0.0"
-dependencies = ["nbwipers==0.3.1"]
+dependencies = ["nbwipers==0.3.2"]
