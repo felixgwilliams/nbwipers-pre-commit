@@ -12,3 +12,13 @@ You can add the following to your `pre-commit-config.yaml` file to ensure that `
     hooks:
       - id: nbwipers-check-install
 ```
+
+If you want to check that your notebooks are clean in your working directory, you can use the `nbwipers-check-wd` hook.
+This is probably overkill.
+
+```yaml
+  - repo: https://github.com/felixgwilliams/nbwipers-pre-commit
+    rev: v0.3.4
+    hooks:
+      - id: nbwipers-check-wd
+```
