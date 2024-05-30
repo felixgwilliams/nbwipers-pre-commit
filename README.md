@@ -8,7 +8,7 @@ You can add the following to your `pre-commit-config.yaml` file to ensure that `
 
 ```yaml
   - repo: https://github.com/felixgwilliams/nbwipers-pre-commit
-    rev: v0.3.5
+    rev: v0.3.6
     hooks:
       - id: nbwipers-check-install
 ```
@@ -18,7 +18,7 @@ This is probably overkill.
 
 ```yaml
   - repo: https://github.com/felixgwilliams/nbwipers-pre-commit
-    rev: v0.3.5
+    rev: v0.3.6
     hooks:
       - id: nbwipers-check-wd
 ```
