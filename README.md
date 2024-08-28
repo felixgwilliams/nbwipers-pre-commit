@@ -8,7 +8,7 @@ You can add the following to your `pre-commit-config.yaml` file to ensure that `
 
 ```yaml
   - repo: https://github.com/felixgwilliams/nbwipers-pre-commit
-    rev: v0.3.7
+    rev: v0.4.0
     hooks:
       - id: nbwipers-check-install
 ```
@@ -18,7 +18,16 @@ This is probably overkill.
 
 ```yaml
   - repo: https://github.com/felixgwilliams/nbwipers-pre-commit
-    rev: v0.3.7
+    rev: v0.4.0
     hooks:
       - id: nbwipers-check-wd
+```
+
+If use the `check-large-files` hook from [pre-commit](https://github.com/pre-commit/pre-commit-hooks), you may get "false positives", since it checks the sizes not-clean notebook files in the working directory. You can use the version included in this repository, which cleans notebooks before checking their size.
+
+```yaml
+  - repo: https://github.com/felixgwilliams/nbwipers-pre-commit
+    rev: v0.4.0
+    hooks:
+      - id: nbwipers-large-files
 ```

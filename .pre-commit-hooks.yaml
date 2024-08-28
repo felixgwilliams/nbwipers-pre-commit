@@ -1,8 +1,8 @@
 - id: nbwipers-check-install
   name: nbwipers check install
   description: Check nbwipers is installed
-  entry: nbwipers
-  args: [check-install]
+  entry: nbwipers check-install
+  args: []
   language: python
   stages: [commit, merge-commit, push, manual]
   always_run: true
@@ -10,9 +10,16 @@
 - id: nbwipers-check-wd
   name: nbwipers check wd
   description: Check notebooks are clean in your working directory
-  entry: nbwipers
-  args: [clean-all]
+  entry: nbwipers clean-all
+  args: []
   language: python
   stages: [commit, merge-commit, push, manual]
   types_or: [jupyter]
   require_serial: true
+- id: nbwipers-large-files
+  name: nbwipers large files
+  description: Check for large files in repository, but clean notebooks before checking
+  entry: nbwipers hook check-large-files
+  args: []
+  language: python
+  stages: [commit, push, manual]
