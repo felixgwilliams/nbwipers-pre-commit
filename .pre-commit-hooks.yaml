@@ -23,3 +23,12 @@
   args: []
   language: python
   stages: [commit, push, manual]
+- id: nbwipers-record
+  name: nbwipers record kernel info
+  description: Check nbwipers is installed
+  entry: nbwipers record
+  args: []
+  language: python
+  stages: [commit, merge-commit, push, manual]
+  always_run: true
+  pass_filenames: false
