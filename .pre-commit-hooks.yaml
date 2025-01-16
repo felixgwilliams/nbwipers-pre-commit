@@ -4,7 +4,6 @@
   entry: nbwipers check-install
   args: []
   language: python
-  stages: [commit, merge-commit, push, manual]
   always_run: true
   pass_filenames: false
 - id: nbwipers-check-wd
@@ -13,7 +12,6 @@
   entry: nbwipers clean-all
   args: []
   language: python
-  stages: [commit, merge-commit, push, manual]
   types_or: [jupyter]
   require_serial: true
 - id: nbwipers-large-files
@@ -22,13 +20,11 @@
   entry: nbwipers hook check-large-files
   args: []
   language: python
-  stages: [commit, push, manual]
 - id: nbwipers-record
   name: nbwipers record kernel info
   description: Check nbwipers is installed
   entry: nbwipers record
   args: []
   language: python
-  stages: [commit, merge-commit, push, manual]
   always_run: true
   pass_filenames: false
