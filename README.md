@@ -8,7 +8,7 @@ You can add the following to your `pre-commit-config.yaml` file to ensure that `
 
 ```yaml
   - repo: https://github.com/felixgwilliams/nbwipers-pre-commit
-    rev: v0.6.0
+    rev: v0.6.1
     hooks:
       - id: nbwipers-check-install
 ```
@@ -17,7 +17,7 @@ If you use the `check-large-files` hook from [pre-commit](https://github.com/pre
 
 ```yaml
   - repo: https://github.com/felixgwilliams/nbwipers-pre-commit
-    rev: v0.6.0
+    rev: v0.6.1
     hooks:
       - id: nbwipers-large-files
 ```
@@ -29,7 +29,7 @@ This allows you to change branches and discard changes in your `.ipynb` files wi
 
 ```yaml
   - repo: https://github.com/felixgwilliams/nbwipers-pre-commit
-    rev: v0.6.0
+    rev: v0.6.1
     hooks:
       - id: nbwipers-record
 ```
@@ -39,7 +39,7 @@ This is probably overkill.
 
 ```yaml
   - repo: https://github.com/felixgwilliams/nbwipers-pre-commit
-    rev: v0.6.0
+    rev: v0.6.1
     hooks:
       - id: nbwipers-check-wd
 ```
